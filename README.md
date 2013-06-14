@@ -8,9 +8,21 @@ compstat reports and a machine queryable interface to this data.
 
 ## Installation Instructions
 
-### Ubuntu Installation
+NYC Compstat API is a Ruby script. Dependencies should be installed after getting
+[Ruby Version Manager](https://rvm.io/rvm/install):
 
-    apt-get install rubygems libcurl4-openssl-dev libxml2-dev libxslt1-dev
     gem install bundler
     bundle install
+
+### Ubuntu Pre-requisites
+
+Before running `bundle install` on Ubuntu, a few packages are needed:
+
+    apt-get install libcurl4-openssl-dev libxml2-dev libxslt1-dev
+
+## Testing
+
+Try running `scraper.rb` to pull data from nyc.gov:
+
+    ruby scraper.rb
 
